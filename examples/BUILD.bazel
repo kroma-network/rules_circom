@@ -1,0 +1,15 @@
+load("//:build_defs.bzl", "compile_circuit")
+
+package(default_visibility = ["//visibility:public"])
+
+compile_circuit(
+    name = "multiplier_3",
+    main = "multiplier_3.circom",
+    deps = ["//examples/multiplier/multiplier_n"],
+)
+
+compile_circuit(
+    name = "multiplier_4",
+    main = "multiplier_4.circom",
+    deps = ["//examples/multiplier/multiplier_n"],
+)

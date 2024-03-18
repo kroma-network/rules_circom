@@ -1,0 +1,10 @@
+load("//:build_defs.bzl", "circom_library")
+
+package(default_visibility = ["//visibility:public"])
+
+circom_library(
+    name = "multiplier_n",
+    srcs = ["multiplier_n.circom"],
+    includes = ["."],
+    deps = ["//examples/multiplier/multiplier_2"],
+)
