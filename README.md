@@ -1,6 +1,8 @@
 # Rules Circom
 
-Bazel Rule for Circom
+Bazel Rule for Circom!
+
+Please take a look at [kroma-network/circomlib](https://github.com/kroma-network/circomlib) for real examples!
 
 ## How to use
 
