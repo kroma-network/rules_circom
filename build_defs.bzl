@@ -16,6 +16,11 @@ def _c_data(name):
         name + ".dat",
     ]]
 
+def _c_name(name):
+    if name == "main" or name == "fr" or name == "calcwit":
+        return name + "_c"
+    return name
+
 def _includes(ctx):
     includes = []
     for include in ctx.attr.includes:
@@ -61,7 +66,7 @@ def _compile_circuit_impl(ctx):
     src = ctx.attr.main.files.to_list()[0]
     arguments.append(src.path)
 
-    name = src.basename[:-len(".circom")]
+    name = _c_name(src.basename[:-len(".circom")])
     outputs = [
         name + ".r1cs",
     ] + _c_srcs(name) + _c_data(name)
