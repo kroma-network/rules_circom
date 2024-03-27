@@ -4,6 +4,12 @@ Bazel Rule for Circom!
 
 Please take a look at [kroma-network/circomlib](https://github.com/kroma-network/circomlib) for real examples!
 
+## Prerequisites
+
+### Bazel
+
+Follow the instructions [here](https://bazel.build/install).
+
 ## How to use
 
 Add this to your `WORKSPACE`:
