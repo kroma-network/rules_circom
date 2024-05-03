@@ -1,5 +1,5 @@
 {
-  "checksum": "cfaadbe2b6a3d783ed0ad45264f3e830a43a08320c876d9b47df3dea9365b905",
+  "checksum": "803ad42acd6f6cbd02bd45ed5547facf4e9c42435b8370e6ca898b2da380c34f",
   "crates": {
     "aho-corasick 1.1.2": {
       "name": "aho-corasick",
@@ -483,14 +483,14 @@
       },
       "license": "MIT/Apache-2.0"
     },
-    "circom 2.1.8": {
+    "circom 2.1.9": {
       "name": "circom",
-      "version": "2.1.8",
+      "version": "2.1.9",
       "repository": {
         "Git": {
           "remote": "https://github.com/kroma-network/circom.git",
           "commitish": {
-            "Rev": "d5a5aca"
+            "Rev": "1b5d13b"
           },
           "strip_prefix": "circom"
         }
@@ -522,11 +522,11 @@
               "target": "clap"
             },
             {
-              "id": "compiler 2.1.8",
+              "id": "compiler 2.1.9",
               "target": "compiler"
             },
             {
-              "id": "constraint_generation 2.1.8",
+              "id": "constraint_generation 2.1.9",
               "target": "constraint_generation"
             },
             {
@@ -542,15 +542,15 @@
               "target": "exitcode"
             },
             {
-              "id": "parser 2.1.8",
+              "id": "parser 2.1.9",
               "target": "parser"
             },
             {
-              "id": "program_structure 2.1.8",
+              "id": "program_structure 2.1.9",
               "target": "program_structure"
             },
             {
-              "id": "type_analysis 2.1.8",
+              "id": "type_analysis 2.1.9",
               "target": "type_analysis"
             },
             {
@@ -561,7 +561,7 @@
           "selects": {}
         },
         "edition": "2018",
-        "version": "2.1.8"
+        "version": "2.1.9"
       },
       "license": null
     },
@@ -572,7 +572,7 @@
         "Git": {
           "remote": "https://github.com/kroma-network/circom.git",
           "commitish": {
-            "Rev": "d5a5aca"
+            "Rev": "1b5d13b"
           },
           "strip_prefix": "circom_algebra"
         }
@@ -693,14 +693,14 @@
       },
       "license": "MIT"
     },
-    "code_producers 2.1.8": {
+    "code_producers 2.1.9": {
       "name": "code_producers",
-      "version": "2.1.8",
+      "version": "2.1.9",
       "repository": {
         "Git": {
           "remote": "https://github.com/kroma-network/circom.git",
           "commitish": {
-            "Rev": "d5a5aca"
+            "Rev": "1b5d13b"
           },
           "strip_prefix": "code_producers"
         }
@@ -743,7 +743,7 @@
           "selects": {}
         },
         "edition": "2018",
-        "version": "2.1.8"
+        "version": "2.1.9"
       },
       "license": null
     },
@@ -837,14 +837,14 @@
       },
       "license": "Apache-2.0"
     },
-    "compiler 2.1.8": {
+    "compiler 2.1.9": {
       "name": "compiler",
-      "version": "2.1.8",
+      "version": "2.1.9",
       "repository": {
         "Git": {
           "remote": "https://github.com/kroma-network/circom.git",
           "commitish": {
-            "Rev": "d5a5aca"
+            "Rev": "1b5d13b"
           },
           "strip_prefix": "compiler"
         }
@@ -868,7 +868,7 @@
         "deps": {
           "common": [
             {
-              "id": "code_producers 2.1.8",
+              "id": "code_producers 2.1.9",
               "target": "code_producers"
             },
             {
@@ -884,14 +884,14 @@
               "target": "num_traits"
             },
             {
-              "id": "program_structure 2.1.8",
+              "id": "program_structure 2.1.9",
               "target": "program_structure"
             }
           ],
           "selects": {}
         },
         "edition": "2018",
-        "version": "2.1.8"
+        "version": "2.1.9"
       },
       "license": null
     },
@@ -902,7 +902,7 @@
         "Git": {
           "remote": "https://github.com/kroma-network/circom.git",
           "commitish": {
-            "Rev": "d5a5aca"
+            "Rev": "1b5d13b"
           },
           "strip_prefix": "constant_tracking"
         }
@@ -928,14 +928,14 @@
       },
       "license": null
     },
-    "constraint_generation 2.1.8": {
+    "constraint_generation 2.1.9": {
       "name": "constraint_generation",
-      "version": "2.1.8",
+      "version": "2.1.9",
       "repository": {
         "Git": {
           "remote": "https://github.com/kroma-network/circom.git",
           "commitish": {
-            "Rev": "d5a5aca"
+            "Rev": "1b5d13b"
           },
           "strip_prefix": "constraint_generation"
         }
@@ -967,7 +967,7 @@
               "target": "circom_algebra"
             },
             {
-              "id": "compiler 2.1.8",
+              "id": "compiler 2.1.9",
               "target": "compiler"
             },
             {
@@ -991,14 +991,14 @@
               "target": "num_traits"
             },
             {
-              "id": "program_structure 2.1.8",
+              "id": "program_structure 2.1.9",
               "target": "program_structure"
             }
           ],
           "selects": {}
         },
         "edition": "2018",
-        "version": "2.1.8"
+        "version": "2.1.9"
       },
       "license": null
     },
@@ -1009,7 +1009,7 @@
         "Git": {
           "remote": "https://github.com/kroma-network/circom.git",
           "commitish": {
-            "Rev": "d5a5aca"
+            "Rev": "1b5d13b"
           },
           "strip_prefix": "constraint_list"
         }
@@ -1049,7 +1049,7 @@
               "target": "num_cpus"
             },
             {
-              "id": "program_structure 2.1.8",
+              "id": "program_structure 2.1.9",
               "target": "program_structure"
             },
             {
@@ -1071,7 +1071,7 @@
         "Git": {
           "remote": "https://github.com/kroma-network/circom.git",
           "commitish": {
-            "Rev": "d5a5aca"
+            "Rev": "1b5d13b"
           },
           "strip_prefix": "constraint_writers"
         }
@@ -1279,7 +1279,7 @@
         "Git": {
           "remote": "https://github.com/kroma-network/circom.git",
           "commitish": {
-            "Rev": "d5a5aca"
+            "Rev": "1b5d13b"
           },
           "strip_prefix": "dag"
         }
@@ -1319,7 +1319,7 @@
               "target": "json"
             },
             {
-              "id": "program_structure 2.1.8",
+              "id": "program_structure 2.1.9",
               "target": "program_structure"
             }
           ],
@@ -3334,14 +3334,14 @@
       },
       "license": "MIT OR Apache-2.0"
     },
-    "parser 2.1.8": {
+    "parser 2.1.9": {
       "name": "parser",
-      "version": "2.1.8",
+      "version": "2.1.9",
       "repository": {
         "Git": {
           "remote": "https://github.com/kroma-network/circom.git",
           "commitish": {
-            "Rev": "d5a5aca"
+            "Rev": "1b5d13b"
           },
           "strip_prefix": "parser"
         }
@@ -3386,11 +3386,11 @@
               "target": "num_traits"
             },
             {
-              "id": "parser 2.1.8",
+              "id": "parser 2.1.9",
               "target": "build_script_build"
             },
             {
-              "id": "program_structure 2.1.8",
+              "id": "program_structure 2.1.9",
               "target": "program_structure"
             },
             {
@@ -3418,7 +3418,7 @@
           ],
           "selects": {}
         },
-        "version": "2.1.8"
+        "version": "2.1.9"
       },
       "build_script_attrs": {
         "data_glob": [
@@ -3883,14 +3883,14 @@
       },
       "license": "MIT OR Apache-2.0"
     },
-    "program_structure 2.1.8": {
+    "program_structure 2.1.9": {
       "name": "program_structure",
-      "version": "2.1.8",
+      "version": "2.1.9",
       "repository": {
         "Git": {
           "remote": "https://github.com/kroma-network/circom.git",
           "commitish": {
-            "Rev": "d5a5aca"
+            "Rev": "1b5d13b"
           },
           "strip_prefix": "program_structure"
         }
@@ -3954,7 +3954,7 @@
           ],
           "selects": {}
         },
-        "version": "2.1.8"
+        "version": "2.1.9"
       },
       "license": null
     },
@@ -4550,7 +4550,7 @@
               "target": "ansi_term"
             },
             {
-              "id": "circom 2.1.8",
+              "id": "circom 2.1.9",
               "target": "circom"
             }
           ],
@@ -5559,14 +5559,14 @@
       },
       "license": "CC0-1.0"
     },
-    "type_analysis 2.1.8": {
+    "type_analysis 2.1.9": {
       "name": "type_analysis",
-      "version": "2.1.8",
+      "version": "2.1.9",
       "repository": {
         "Git": {
           "remote": "https://github.com/kroma-network/circom.git",
           "commitish": {
-            "Rev": "d5a5aca"
+            "Rev": "1b5d13b"
           },
           "strip_prefix": "type_analysis"
         }
@@ -5598,14 +5598,14 @@
               "target": "num_traits"
             },
             {
-              "id": "program_structure 2.1.8",
+              "id": "program_structure 2.1.9",
               "target": "program_structure"
             }
           ],
           "selects": {}
         },
         "edition": "2018",
-        "version": "2.1.8"
+        "version": "2.1.9"
       },
       "license": null
     },

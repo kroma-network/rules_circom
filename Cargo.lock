@@ -105,8 +105,8 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "circom"
-version = "2.1.8"
-source = "git+https://github.com/kroma-network/circom.git?rev=d5a5aca#d5a5aca855e4b3825fe0dffc9b148037cc721c52"
+version = "2.1.9"
+source = "git+https://github.com/kroma-network/circom.git?rev=1b5d13b#1b5d13b71214b43fcbd7707a83bc14e632ce8685"
 dependencies = [
  "ansi_term",
  "clap",
@@ -124,7 +124,7 @@ dependencies = [
 [[package]]
 name = "circom_algebra"
 version = "2.1.4"
-source = "git+https://github.com/kroma-network/circom.git?rev=d5a5aca#d5a5aca855e4b3825fe0dffc9b148037cc721c52"
+source = "git+https://github.com/kroma-network/circom.git?rev=1b5d13b#1b5d13b71214b43fcbd7707a83bc14e632ce8685"
 dependencies = [
  "constant_tracking",
  "num-bigint-dig",
@@ -148,8 +148,8 @@ dependencies = [
 
 [[package]]
 name = "code_producers"
-version = "2.1.8"
-source = "git+https://github.com/kroma-network/circom.git?rev=d5a5aca#d5a5aca855e4b3825fe0dffc9b148037cc721c52"
+version = "2.1.9"
+source = "git+https://github.com/kroma-network/circom.git?rev=1b5d13b#1b5d13b71214b43fcbd7707a83bc14e632ce8685"
 dependencies = [
  "handlebars",
  "lz_fnv",
@@ -178,8 +178,8 @@ dependencies = [
 
 [[package]]
 name = "compiler"
-version = "2.1.8"
-source = "git+https://github.com/kroma-network/circom.git?rev=d5a5aca#d5a5aca855e4b3825fe0dffc9b148037cc721c52"
+version = "2.1.9"
+source = "git+https://github.com/kroma-network/circom.git?rev=1b5d13b#1b5d13b71214b43fcbd7707a83bc14e632ce8685"
 dependencies = [
  "code_producers",
  "constant_tracking",
@@ -191,12 +191,12 @@ dependencies = [
 [[package]]
 name = "constant_tracking"
 version = "2.0.0"
-source = "git+https://github.com/kroma-network/circom.git?rev=d5a5aca#d5a5aca855e4b3825fe0dffc9b148037cc721c52"
+source = "git+https://github.com/kroma-network/circom.git?rev=1b5d13b#1b5d13b71214b43fcbd7707a83bc14e632ce8685"
 
 [[package]]
 name = "constraint_generation"
-version = "2.1.8"
-source = "git+https://github.com/kroma-network/circom.git?rev=d5a5aca#d5a5aca855e4b3825fe0dffc9b148037cc721c52"
+version = "2.1.9"
+source = "git+https://github.com/kroma-network/circom.git?rev=1b5d13b#1b5d13b71214b43fcbd7707a83bc14e632ce8685"
 dependencies = [
  "ansi_term",
  "circom_algebra",
@@ -212,7 +212,7 @@ dependencies = [
 [[package]]
 name = "constraint_list"
 version = "2.1.8"
-source = "git+https://github.com/kroma-network/circom.git?rev=d5a5aca#d5a5aca855e4b3825fe0dffc9b148037cc721c52"
+source = "git+https://github.com/kroma-network/circom.git?rev=1b5d13b#1b5d13b71214b43fcbd7707a83bc14e632ce8685"
 dependencies = [
  "circom_algebra",
  "constraint_writers",
@@ -225,7 +225,7 @@ dependencies = [
 [[package]]
 name = "constraint_writers"
 version = "2.1.8"
-source = "git+https://github.com/kroma-network/circom.git?rev=d5a5aca#d5a5aca855e4b3825fe0dffc9b148037cc721c52"
+source = "git+https://github.com/kroma-network/circom.git?rev=1b5d13b#1b5d13b71214b43fcbd7707a83bc14e632ce8685"
 dependencies = [
  "circom_algebra",
  "json",
@@ -259,7 +259,7 @@ dependencies = [
 [[package]]
 name = "dag"
 version = "2.1.8"
-source = "git+https://github.com/kroma-network/circom.git?rev=d5a5aca#d5a5aca855e4b3825fe0dffc9b148037cc721c52"
+source = "git+https://github.com/kroma-network/circom.git?rev=1b5d13b#1b5d13b71214b43fcbd7707a83bc14e632ce8685"
 dependencies = [
  "circom_algebra",
  "constraint_list",
@@ -638,8 +638,8 @@ dependencies = [
 
 [[package]]
 name = "parser"
-version = "2.1.8"
-source = "git+https://github.com/kroma-network/circom.git?rev=d5a5aca#d5a5aca855e4b3825fe0dffc9b148037cc721c52"
+version = "2.1.9"
+source = "git+https://github.com/kroma-network/circom.git?rev=1b5d13b#1b5d13b71214b43fcbd7707a83bc14e632ce8685"
 dependencies = [
  "lalrpop",
  "lalrpop-util",
@@ -739,8 +739,8 @@ dependencies = [
 
 [[package]]
 name = "program_structure"
-version = "2.1.8"
-source = "git+https://github.com/kroma-network/circom.git?rev=d5a5aca#d5a5aca855e4b3825fe0dffc9b148037cc721c52"
+version = "2.1.9"
+source = "git+https://github.com/kroma-network/circom.git?rev=1b5d13b#1b5d13b71214b43fcbd7707a83bc14e632ce8685"
 dependencies = [
  "codespan",
  "codespan-reporting",
@@ -1048,8 +1048,8 @@ dependencies = [
 
 [[package]]
 name = "type_analysis"
-version = "2.1.8"
-source = "git+https://github.com/kroma-network/circom.git?rev=d5a5aca#d5a5aca855e4b3825fe0dffc9b148037cc721c52"
+version = "2.1.9"
+source = "git+https://github.com/kroma-network/circom.git?rev=1b5d13b#1b5d13b71214b43fcbd7707a83bc14e632ce8685"
 dependencies = [
  "num-bigint-dig",
  "num-traits",

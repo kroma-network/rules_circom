@@ -15,5 +15,5 @@ keywords = ["tachyon", "circom", "proofs", "zkp", "zkSNARKs"]
 publish = false
 
 [dependencies]
-circom = { git = "https://github.com/kroma-network/circom.git", rev = "d5a5aca" }
+circom = { git = "https://github.com/kroma-network/circom.git", rev = "1b5d13b" }
 ansi_term = "0.12.1"
