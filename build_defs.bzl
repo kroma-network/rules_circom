@@ -21,13 +21,19 @@ def _c_name(name):
         return name + "_c"
     return name
 
+def _GetPath(ctx, path):
+    if ctx.label.workspace_root:
+        return ctx.label.workspace_root + "/" + path
+    else:
+        return path
+
 def _includes(ctx):
     includes = []
     for include in ctx.attr.includes:
         if include == ".":
-            includes.append(ctx.build_file_path[:ctx.build_file_path.rfind("/")])
+            includes.append(_GetPath(ctx, ctx.label.package))
         else:
-            includes.append(include)
+            includes.append(_GetPath(ctx, include))
     for dep in ctx.attr.deps:
         includes += dep[CircomInfo].includes
     return includes
@@ -42,7 +48,14 @@ def _circom_library_impl(ctx):
     )]
 
 def _compile_circuit_impl(ctx):
-    arguments = ["--r1cs", "--c"]
+    arguments = ["--r1cs"]
+
+    if ctx.attr.generate_c:
+        arguments.append("--c")
+    if ctx.attr.generate_wasm:
+        arguments.append("--wasm")
+    if ctx.attr.generate_wasm:
+        arguments.append("--sym")
 
     if ctx.attr.O0:
         arguments.append("--O0")
@@ -69,7 +82,14 @@ def _compile_circuit_impl(ctx):
     name = _c_name(src.basename[:-len(".circom")])
     outputs = [
         name + ".r1cs",
-    ] + _c_srcs(name) + _c_data(name)
+    ]
+    if ctx.attr.generate_c:
+        outputs.append(_c_srcs(name))
+        outputs.append(_c_data(name))
+    if ctx.attr.generate_wasm:
+        outputs.append(name + "_js/" + name + ".wasm")
+    if ctx.attr.generate_sym:
+        outputs.append(name + ".sym")
     outputs = [ctx.actions.declare_file(out) for out in outputs]
     arguments.append("--output=" + outputs[0].dirname)
 
@@ -118,6 +138,9 @@ compile_circuit = rule(
         "main": attr.label(mandatory = True, allow_single_file = [".circom"]),
         "includes": attr.string_list(),
         "deps": attr.label_list(providers = [CircomInfo]),
+        "generate_c": attr.bool(doc = "Compiles the circuit to C", default=True),
+        "generate_wasm": attr.bool(doc = "Compiles the circuit to WASM"),
+        "generate_sym": attr.bool(doc = "Outputs witness in sym format"),
         "O0": attr.bool(doc = "No simplification is applied"),
         "O1": attr.bool(doc = "Only applies signal to signal and signal to constant simplification"),
         "O2": attr.bool(doc = "Full constraint simplification"),
